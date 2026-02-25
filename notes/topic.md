@@ -1,18 +1,20 @@
-                                                part - 1
-GraphQL introduction ⭐
-GraphQL vs REST ⭐
-Problems GraphQL solves (over-fetching, under-fetching) ⭐
-GraphQL architecture
-Single endpoint concept ⭐
-Schema ⭐
-Schema Definition Language (SDL) ⭐
-Scalar types ⭐
-Object types ⭐
-Custom types
-Enums ⭐
-Input types ⭐
-Non-null types ⭐
-Lists in GraphQL ⭐
+                                             ✅ done <----  part - 1 -- > done ✅
+GraphQL introduction ⭐  -- > done ✅
+GraphQL vs REST ⭐   -- > done ✅
+Problems GraphQL solves (over-fetching, under-fetching) ⭐  -- > done ✅
+
+GraphQL architecture  -- > done ✅
+Single endpoint concept ⭐-- > done ✅
+Schema ⭐-- > done ✅
+
+Schema Definition Language (SDL) ⭐ -- > done ✅
+Scalar types ⭐ -- > done ✅
+Custom types ⭐ -- > done ✅
+Object types ⭐ -- > done ✅
+Enums ⭐ -- > done ✅
+Input types ⭐-- > done ✅
+Non-null types ⭐ -- > done ✅
+Lists in GraphQL ⭐ -- > done ✅
 
 
                                                     part - 2
