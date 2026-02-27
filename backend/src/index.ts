@@ -24,7 +24,7 @@ export interface GraphContext {
 }
 
 const port = process.env.PORT || 3000
-const graphqlPath = '/graphgql'
+const graphqlPath = '/graphql'
 const env = process.env.NODE_ENV
 
 const app = express()
@@ -106,8 +106,8 @@ Logs galat time pe aa sakte hain Kubernetes / Docker sochega server ready hai (j
 
 // Async function hai kyunki andar await use ho raha hai. Server start hone ke liye kuch async operations complete hone zaroori hain.
 async function startServer() {
-
-    console.log('server started')
+    try {
+          console.log('server started')
 
 /*
 Ye GraphQL engine ko initialize karta hai || Schema load karta hai || Resolvers ready karta hai || Internal setup complete karta hai
@@ -135,5 +135,8 @@ Ye GraphQL engine ko initialize karta hai || Schema load karta hai || Resolvers 
     .then(()=> {
         console.log(`server is ready at http://localhost: ${port} ${graphqlPath}`)
     })
+    } catch (error) {
+        console.log(`error in start server () ${error}`)
+    }
 }
 startServer()
