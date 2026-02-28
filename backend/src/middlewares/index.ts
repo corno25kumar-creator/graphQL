@@ -1,2 +1,2 @@
-export * from './graphql/auth.middleware'
-export * from './express/error.middleware'
+export * from './graphql/auth.middleware.js'
+export * from './express/error.middleware.js'
