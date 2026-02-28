@@ -10,6 +10,7 @@ import {ApolloServerPluginDrainHttpServer} from '@apollo/server/plugin/drainHttp
 
 import { resolvers, typeDefs } from './lib/graphql/schema.js'
 import type { Request } from 'express'
+import { connectDb } from './lib/db/index.js'
 
 
 /*
@@ -108,6 +109,8 @@ Logs galat time pe aa sakte hain Kubernetes / Docker sochega server ready hai (j
 async function startServer() {
     try {
           console.log('server started')
+          // connect db
+          await connectDb()
 
 /*
 Ye GraphQL engine ko initialize karta hai || Schema load karta hai || Resolvers ready karta hai || Internal setup complete karta hai

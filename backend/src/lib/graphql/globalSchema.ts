@@ -16,13 +16,13 @@ Abhi koi real query nahi hai Abhi koi real mutation nahi hai Sirf structure read
 🔥 Relation Apollo Se Apollo Server Apollo kya karta hai? Query receive karta hai Check karta hai schema me allowed hai ya nahi Resolver run karta hai Data return karta hai
 */
 export const GlobalTypeDef = gql`
+  # Scalar Definations
   scalar Date
   scalar JSON
-
+  # Type Definations
   type Query {
     _empty: String
   }
-
   type Mutation {
     _empty: String
   }

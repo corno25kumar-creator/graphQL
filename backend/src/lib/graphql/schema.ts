@@ -3,6 +3,7 @@
 import {merge} from 'lodash'
 
 import { GlobalTypeDef } from './globalSchema.js'
+import { BookResolver, BookTypeDef } from '../../model/book.model.js'
 
 /*
 step : 4 (index.ts step : 2)
@@ -12,14 +13,11 @@ step : 4 (index.ts step : 2)
 
 
 // Matlab: 👉 GlobalTypeDef ko ek array me daal diya 👉 Taaki future me aur schemas add kar sako
-export const typeDefs = [GlobalTypeDef]
+export const typeDefs = [GlobalTypeDef, BookTypeDef]
 
 
 // Resolver actual function hota hai jo data laata hai.
-export const resolvers = {
-    Query: {},
-    Mutation: {}
-}
+export const resolvers = merge([BookResolver])
 
 
 /*
