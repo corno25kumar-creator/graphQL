@@ -34,11 +34,15 @@ const graphqlPath = '/graphql'
 const env = process.env.NODE_ENV
 
 const app = express()
-app.use(express.static(path.join(__dirname, "../frontend/dist")))
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/dist/index.html"))
-})
+
+// Serve frontend static files
+app.use(express.static(path.join(__dirname, '../../frontend/dist')));
+
+// For SPA routes
+app.get('*', (_, res) => {
+  res.sendFile(path.join(__dirname, '../../frontend/dist/index.html'));
+});
 
 const httpServer = http.createServer(app)
 
