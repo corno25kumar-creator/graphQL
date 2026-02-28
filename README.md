@@ -7,11 +7,10 @@
 ![Next.js](https://img.shields.io/badge/Next.js-16-black)
 ![Apollo](https://img.shields.io/badge/Apollo-GraphQL-purple)
 ![MongoDB](https://img.shields.io/badge/Database-MongoDB-green)
-![License](https://img.shields.io/badge/License-ISC-lightgrey)
 
-A modern **production-style Full Stack GraphQL application** built with Apollo Server, Next.js, and MongoDB Atlas.
+A modern **Full Stack GraphQL application** built with Apollo Server, Next.js, and MongoDB Atlas.
 
-This project demonstrates scalable GraphQL architecture, clean backend modularization, real-time client updates, and cloud database integration.
+This project demonstrates GraphQL architecture, clean backend modularization, real-time client updates, and mongo database integration.
 
 ---
 
@@ -189,14 +188,15 @@ Ctrl + Shift + P → Run Task → Dev All
 | NEXT_PUBLIC_AUTH_TOKEN | Authorization token |
 
 ---
+# 🚀 Future Improvements
 
-# 🧠 Engineering Highlights
-
-* Modular GraphQL schema design
-* Custom GraphQL context
-* Centralized error handling
-* MongoDB Atlas IP whitelisting
-* Apollo Client middleware
-* Environment-based configuration
-* Full-stack TypeScript
-* Clean separation of concerns
+- 🔐 Implement JWT-based authentication & role-based authorization
+- 📄 Add pagination and sorting for book queries
+- 🔎 Implement search and filtering functionality
+- 📚 Add book categories and relational data modeling
+- ⚡ Introduce GraphQL Subscriptions for real-time updates
+- 🧪 Add unit and integration tests
+- 🛡 Improve input validation and centralized error handling
+- 📊 Add request logging and performance monitoring
+- 🚀 Deploy backend and frontend to cloud (e.g., Vercel + Render)
+- 📦 Dockerize the application for containerized deployment
