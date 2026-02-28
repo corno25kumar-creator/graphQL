@@ -11,6 +11,11 @@ import {ApolloServerPluginDrainHttpServer} from '@apollo/server/plugin/drainHttp
 import { resolvers, typeDefs } from './lib/graphql/schema.js'
 import type { Request } from 'express'
 import { connectDb } from './lib/db/index.js'
+import path from "path"
+
+
+
+
 
 
 /*
@@ -29,6 +34,12 @@ const graphqlPath = '/graphql'
 const env = process.env.NODE_ENV
 
 const app = express()
+app.use(express.static(path.join(__dirname, "../frontend/dist")))
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/dist/index.html"))
+})
+
 const httpServer = http.createServer(app)
 
 
